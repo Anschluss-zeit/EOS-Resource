@@ -1,0 +1,55 @@
+﻿<local:MyCard Title="EOS服务器 公告版" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <Image Margin="0,0,0,5" Height="120" HorizontalAlignment="Center" Source="https://cdn.luogu.com.cn/upload/image_hosting/d8vu87xo.png" />
+        <TextBlock Margin="0,0,0,5" HorizontalAlignment="Center"
+                   Text="最后更新时间：2022-12-7 21点" />
+        <local:MyTextButton Margin="0,0,0,5" HorizontalAlignment="Center"
+                   Text="刷新主页" EventType="刷新主页" />
+        <local:MyHint Margin="0,0,0,5" IsWarn="False"
+                   Text="服务器将在12-8早上进行迁移" />
+        <TextBlock Margin="0,0,0,5" HorizontalAlignment="Left"
+                   Text="接下来的一周将进行数据迁移，玩家可以搬运物品到主城" />
+        <TextBlock Margin="0,0,0,5" HorizontalAlignment="Left"
+                   Text="等到新存档刷新后可以带原来的物品回到主城" />
+        <TextBlock Margin="0,0,0,5" Foreground="#FF0000"
+                   Text="请不要偷拿别人的物品，发现一次即封号14天" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Minecraft 相关资讯" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,5" IsWarn="False"
+                    Text="Minecraft Java Edition 1.19.3-rc3" />
+        <Image Margin="0,0,0,5" Height="130" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/1/17/1.19.3-rc3.png/revision/latest?cb=20221206111417" />
+        <TextBlock Margin="0,0,0,5" HorizontalAlignment="Left"
+                    Text="1.19.3-rc3是Java版1.19.3的第3个发布候选版本，发布于2022年12月6日，修复了一些漏洞。" />
+        <TextBlock Margin="0,0,0,5" HorizontalAlignment="Left" Foreground="#FF8800"
+                    Text="MC-108707 — 在服务端环境中死亡后，药水效果、粒子和火焰动画仍然在客户端侧存在。" />
+        <TextBlock Margin="0,0,0,5" HorizontalAlignment="Left" Foreground="#FF8800"
+                    Text="MC-258279 — 重载资源后，粒子组不会被清除。" />
+        <TextBlock Margin="0,0,0,5" HorizontalAlignment="Left" Foreground="#FF8800"
+                    Text="MC-258258 — 放置盔甲架时，其EntityTag NBT数据不再会被应用到盔甲架实体上。" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="EOS服务器 相关功能" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                            Text="打开 EOSWIKI" EventType="打开网页" EventData="http://wiki.eosgame.tk/" />
+                <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                            Text="查询服务器状态" EventType="弹出窗口" EventData="EOS服务器状态|Java(java.eosgame.tk) Stopped\nBedrock(bdr.eosgame.tk) Stopped\nLAN(164.155.106.213:19132) Running" />
+                <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                            Text="进入EOS服务器" EventType="启动游戏" EventData="1.16.5|java.eosgame.tk" ToolTip="使用 Minecraft 1.16.5 进入 EOS" />
+                <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                            Text="复制服务器IP" EventType="复制文本" EventData="java.eosgame.tk" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="EOS服务器 相关资讯" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,5" IsWarn="False"
+            Text="暂时还没想好写啥QWQ" />
+    </StackPanel>
+</local:MyCard>
